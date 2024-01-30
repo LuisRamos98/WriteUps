@@ -3,16 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; URL=/WriteUps/HTB - Broker/HTB - Broker.html">
     <title>Redirección</title>
-    <script>
-        // Redirigir a otra página después de un tiempo determinado (en milisegundos)
-        setTimeout(function() {
-            window.location.href = '/WriteUps/HTB - Broker/HTB - Broker.html'; // Cambia 'otra_pagina.html' por la URL de la página a la que deseas redirigir
-        }, 3000); // Redirigir después de 3 segundos (3000 milisegundos)
-    </script>
+    <style>
+        /* Estilos para el loader */
+
+        * {
+            background-color: #212121;
+        }
+
+        .loader {
+            border: 16px solid #666666; /* Light grey */
+            border-top: 16px solid #3498db; /* Azul */
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            animation: spin 2s linear infinite;
+            margin: auto; /* Centra el loader */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Estilos para el contenedor del loader */
+        .loader-container {
+            display: flex;
+            justify-content: center;
+            height: 100vh; /* Solo para hacerlo visible */
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <!-- Puedes agregar contenido adicional aquí -->
-    <p>Redireccionando a otra página en 3 segundos...</p>
+    <!-- Contenedor del loader -->
+    <div class="loader-container">
+        <div class="loader"></div> <!-- Loader -->
+    </div>
 </body>
 </html>
+
